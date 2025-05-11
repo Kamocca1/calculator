@@ -1,0 +1,75 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.calculator {
+    width: auto;
+    height: 600px;
+    border: 2px solid black;
+}
+.display {
+    width: auto;
+    height: 200px;
+    border-bottom: 2px solid black;
+    font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.buttons {
+    width: auto;
+    height: 400px;
+    display: flex;
+}
+.buttons .rhs {
+    width: 25%;
+    height: 400px;
+    border-left: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+}
+.button.operator {
+    flex: auto;
+    font-size: x-large;
+}
+.button#equals {
+    flex: auto;
+    font-size: x-large;
+}
+.buttons .lhs {
+    width: 75%;
+    height: 400px;
+}
+.buttons .lhs .top {
+    width: auto;
+    height: 20%;
+    border-bottom: 2px solid black;
+    display: flex;
+    padding: 8px;
+}
+.button#clear {
+    flex: auto;
+    font-size: x-large;
+}
+.buttons .lhs .bottom {
+    width: auto;
+    height: 80%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+.button.operand {
+    width: 33%;
+    height: auto;
+    flex: auto;
+    font-size: x-large;
+}
